@@ -1,0 +1,455 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --header-height: 50px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form {
+  margin: auto;
+  width: 70%;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  flex-basis: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav,
+main {
+  height: calc(100% - var(--header-height));
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  overflow-y: scroll;
+  flex-basis: 12%;
+  height: 100vh;
+  background-color: rgb(246, 245, 247);
+}
+
+nav img {
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  left: 40px;
+  top: 25px;
+}
+
+main {
+  max-width: 88%;
+  height: 100%;
+}
+
+.dashprojet {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin: 12px auto;
+  width: max-content;
+  color: #4a4f62;
+}
+.dashprojet1 {
+  color: #4a4f62;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding: 0px 16px;
+}
+
+.compute,
+.reseau,
+.stockage,
+.vpc,
+.outils,
+.IoT {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px;
+  margin-bottom: 25px;
+  margin-left: 18px;
+  text-align: left;
+  width: 85%;
+  color: #510098;
+  overflow: hidden;
+}
+.textnav {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #4a4f62;
+  margin-bottom: 0px;
+  padding: 0px 1px;
+  text-align: left;
+  flex-direction: column;
+}
+.externes {
+  display: flex;
+  font-size: 13px;
+  margin-top: 20px;
+  padding: 0px 20px;
+  text-align: left;
+  flex-direction: column;
+}
+.externes a {
+  color: #510098;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.orga {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header .default {
+  border-radius: 10px;
+  border: 5px solid rgb(246, 245, 247);
+  height: 80%;
+  margin-left: 10px;
+  width: 150px;
+}
+.orga select {
+  height: 40px;
+  width: 80px;
+  background-color: #45d6b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.bouer {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(246, 245, 247);
+}
+.bouer i {
+  font-size: 25px;
+  color: rgb(177, 177, 177);
+}
+.orga p {
+  text-align: right;
+}
+.orga * {
+  margin: 0 10px;
+}
+.init {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a365f6;
+  color: white;
+}
+.fleche {
+  margin-left: -5px;
+}
+
+.outiltitle,
+.computetitle,
+.reseautitle,
+.stockagetitle,
+.vpctitle,
+.IoTtitle {
+  display: flex;
+  justify-content: space-between;
+}
+.mainform {
+  text-align: left;
+}
+
+.mainform h1 {
+  font-weight: normal;
+}
+.bouée {
+  width: 100%;
+}
+.mainform .title {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.backtobucket {
+  text-align: left;
+  color: #7034ab;
+  font-weight: bold;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 38px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.inputbucket {
+  margin-bottom: 15px;
+  border: 1px solid #d4dae7;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 15px;
+  height: 50px;
+  padding-left: 18px;
+}
+.firstsectiontext {
+  padding: 1px;
+  color: #4a4f62;
+}
+
+.bucketvis {
+  width: 96%;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  border: solid 1px #d4dae7;
+  margin-bottom: 25px;
+  padding: 30px;
+}
+
+.bucketvisibilityradio {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.public {
+  margin-right: 15px;
+}
+
+h2 {
+  font-weight: 400;
+  margin-top: 0px;
+  color: rgb(21, 26, 45);
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 24px;
+}
+
+h2::before {
+  font-size: 16px;
+  margin-right: 20px;
+  font-weight: bold;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  align-content: center;
+  display: inline-block;
+  background-color: rgb(74, 79, 98);
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: -40px;
+}
+
+.content1::before {
+  content: "1";
+}
+.content2::before {
+  content: "2";
+}
+.content3::before {
+  content: "3";
+}
+.content4::before {
+  content: "4";
+}
+
+.imglogo {
+  width: 130px;
+}
+
+.countryimg {
+  width: 25px;
+}
+.formsection {
+  position: relative;
+}
+form .formsection .countries {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+}
+form .formsection .country label {
+  padding: 10px 20px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4a4f62;
+  border-radius: 5px;
+}
+
+.countryimg {
+  margin-right: 21px;
+}
+
+label[for="paris"] {
+  border: solid 1px #7034ab !important;
+}
+
+.countries input[type="radio"] {
+  display: none;
+}
+
+.redWarning {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  background-color: rgb(255, 225, 231);
+  color: rgb(239, 87, 116);
+}
+
+.redWarning i {
+  font-size: 32px;
+}
+
+.redWarning p {
+  margin-left: 15px;
+  font-size: 19px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: solid 1px #c6cbd4;
+}
+
+table thead,
+table tbody td,
+table tfoot .tablerightcolumn {
+  border-right: solid 1px #c6cbd4;
+}
+table .tablerightcolumn,
+table thead,
+table thead table .tablerightcolumn,
+table tbody td {
+  border-left: solid 1px #c6cbd4;
+}
+table tbody td,
+table tbody .tablerightcolumn,
+table tfoot .tablerightcolumn {
+  border-bottom: solid 1px #c6cbd4;
+}
+
+td div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+td {
+  height: 100px;
+}
+td,
+th {
+  padding: 15px;
+  height: 50px;
+}
+
+table .tableleftcolumn {
+  width: 70%;
+}
+
+table .tableleftcolumn .gbtext {
+  font-style: italic;
+}
+
+table .tablerightcolumn {
+  width: 30%;
+  background-color: #ebf2ff;
+}
+
+table .tablerightcolumn div {
+  justify-content: end;
+}
+
+table tfoot .columninvisible {
+  visibility: hidden;
+}
+table .inputthead {
+  margin: auto;
+  width: max-content;
+}
+table .inputthead input {
+  width: 70px;
+  padding: 0 10px;
+}
+table .storageinput * {
+  height: 30px;
+}
+table .inputthead input,
+table .storageinput input[type="number"] {
+  padding: 1px 12px;
+  border-radius: 10px 10px;
+  margin-right: 25px;
+}
+table .storage-input input[type="number"] {
+  padding-left: 10px;
+}
+table .storageinput .gb {
+  width: 30px;
+}
+
+form input[type="submit"] {
+  height: 40px;
+  width: 80px;
+  background-color: #45d6b5;
+  color: white;
+  border: none;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  font-size: 25px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  height: 100px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+footer a {
+  box-sizing: border-box;
+  color: #4a4f62;
+  height: 100px;
+  font-size: 14px;
+  margin: 0 20px 20px;
+}

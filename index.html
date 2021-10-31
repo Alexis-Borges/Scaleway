@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scaleway</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/a2d794b043.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="flex">
+      <nav class="menu">
+        <div>
+          <img src="/Imgs/logo.png" class="imglogo" alt="Scaleway_logo" />
+
+          <div class="dashprojet">
+            <div class="dashprojet1">Dashboard du projet</div>
+          </div>
+
+          <div class="compute">
+            <div class="computetitle">
+              <h3><i class="fas fa-microchip"></i> Compute</h3>
+              <i class="fas fa-chevron-up"></i>
+            </div>
+            <a class="textnav"> Instances</a>
+            <a class="textnav"> Apple Silicon</a>
+            <a class="textnav"> Bare Metal</a>
+            <a class="textnav"> Kubernetes</a>
+            <a class="textnav">
+              Functions <i style="color: orange" class="fas fa-ad"></i>
+            </a>
+            <a class="textnav">
+              Containers <i style="color: orange" class="fas fa-ad"></i>
+            </a>
+          </div>
+
+          <div class="stockage">
+            <div class="stockagetitle">
+              <h3><i class="fas fa-box"></i> Storage</h3>
+              <i class="fas fa-chevron-up"></i>
+            </div>
+            <a class="textnav"> Object Storage</a>
+            <a class="textnav"> Database</a>
+          </div>
+
+          <div class="vpc">
+            <div class="vpctitle">
+              <h3><i class="fas fa-cloud"></i> VPC</h3>
+              <i class="fas fa-chevron-up"></i>
+            </div>
+            <a class="textnav"> Private Networks</a>
+            <a class="textnav"> Public Gateways</a>
+          </div>
+
+          <div class="reseau">
+            <div class="reseautitle">
+              <h3><i class="fas fa-wifi"></i> Networks</h3>
+              <i class="fas fa-chevron-up"></i>
+            </div>
+
+            <a class="textnav"> Load Balancer</a>
+            <a class="textnav"> DNS</a>
+          </div>
+
+          <div class="outils">
+            <div class="outiltitle">
+              <h3><i class="fas fa-tools"></i> Tools</h3>
+              <i class="fas fa-chevron-up"></i>
+            </div>
+
+            <a class="textnav"> Container Registry</a>
+          </div>
+
+          <div class="IoT">
+            <div class="IoTtitle">
+              <h3><i class="fas fa-sun"></i> IoT Station</h3>
+              <i class="fas fa-chevron-up"></i>
+            </div>
+            <a class="textnav"> IoT Hub</a>
+          </div>
+          <div class="externes">
+            <a>Assistance</a>
+            <a>Abus</a>
+            <a>Documentation <i class="fas fa-external-link-alt"></i></a>
+            <a
+              >Demande de Fonctionalité<i class="fas fa-external-link-alt"></i
+            ></a>
+            <a>Console Dedibox <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <header class="header">
+          <select class="default">
+            <option value="default">default</option>
+            <option value="other">autre</option>
+          </select>
+          <div class="orga">
+            <select>
+              <option value="create">create</option>
+              <option value="modify">modify</option>
+            </select>
+            <div class="bouer">
+              <i class="far fa-life-ring"></i>
+            </div>
+            <p>Organization</p>
+            <p class="init">AB</p>
+            <i class="fas fa-chevron-down fleche"></i>
+          </div>
+        </header>
+
+        <div class="mainform">
+          <p class="backtobucket">
+            <i class="fas fa-chevron-left"></i> Back to buckets
+          </p>
+        </div>
+
+        <form>
+          <h1>Create a Bucket</h1>
+          <div class="formsection">
+            <div class="sectiontitle">
+              <h2 class="content1">Name your bucket</h2>
+            </div>
+            <input type="text" class="inputbucket" placeholder="Bucket name " />
+            <p class="firstsectiontext">
+              <i class="fas fa-info-circle"></i> The name of your bucket can
+              only contain the following characters (min 3): lowercase letters,
+              numbers, periods (.) And hyphens (-)
+            </p>
+          </div>
+          <br /><br />
+          <div class="formsection">
+            <div class="sectiontitle">
+              <h2 class="content2">Choose a region</h2>
+            </div>
+            <p>
+              A region refers to the geographical location in wich yout bucket
+              will be created
+            </p>
+            <div class="countries">
+              <div class="country">
+                <input
+                  type="radio"
+                  id="paris"
+                  name="radio-countries"
+                  value="PARIS"
+                  checked
+                />
+                <label for="paris"
+                  ><img class="countryimg" src="/Imgs/france.svg" />
+                  PARIS</label
+                >
+              </div>
+              <div class="country">
+                <input
+                  type="radio"
+                  id="amsterdam"
+                  name="radio-countries"
+                  value="AMSTERDAM"
+                />
+                <label for="amsterdam"
+                  ><img class="countryimg" src="/Imgs/amsterdam.svg" />
+                  AMSTERDAM</label
+                >
+              </div>
+              <div class="country">
+                <input
+                  type="radio"
+                  id="varsovie"
+                  name="radio-countries"
+                  value="VARSOVIE"
+                />
+                <label for="varsovie"
+                  ><img class="countryimg" src="/Imgs/varsovie.svg" />
+                  VARSOVIE</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="formsection">
+            <div class="sectiontitle">
+              <h2 class="content3">Set Your Bucket Visibility</h2>
+            </div>
+            <div class="bucketvis">
+              <p class="buckeyvisibilitytext">
+                Bucket Visiblity specifies whether the list of objects in the
+                objects in the bucket. It does not affect the visibility of the
+                objects themselves. A file uploaded to a public bucket is
+                private by default. Additionally, a private file in a public
+                bucket cannot be publicly accessible.
+              </p>
+              <div class="bucketvisibilityradio">
+                <div>
+                  <input
+                    type="radio"
+                    id="public"
+                    name="radio-visibility"
+                    value="Public"
+                    checked
+                  />
+                  <label for="public" class="public">Public</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="private"
+                    name="radio-visibility"
+                    value="Private"
+                  />
+                  <label for="private">Private</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="formsection">
+            <div class="sectiontitle">
+              <h2 class="content4">Estimated Cost</h2>
+            </div>
+            <p class="estimatedcosttext">
+              This summary provides a cost estimation based on your
+              configuration, the amount of time you expexct to use the resource
+              for, and the scale of your expected usage. For the purpose of this
+              calculation, we consider that 1 month equals to 730 hours
+            </p>
+            <div class="redWarning">
+              <i class="fas fa-exclamation-triangle"></i>
+              <p>
+                Important notice: Chia farming on Scaleway Object Storage that
+                occurs without prior authorization will be billed at €0.08 per
+                GB. Read our blogpost to learn more
+              </p>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th class="tableleftcolumn">
+                    <h3>
+                      <i class="fas fa-calculator"></i>
+                      Estimated cost
+                    </h3>
+                  </th>
+                  <th class="tablerightcolumn">
+                    <div class="inputthead">
+                      <input
+                        type="number"
+                        name="time-number"
+                        min="0"
+                        value="1"
+                      />
+                      <select name="time" id="time">
+                        <option value="Hour">Hour</option>
+                        <option value="Day">Day</option>
+                        <option value="Month">Month</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tableleftcolumn">
+                    <div>
+                      <p>Region</p>
+                      <div class="selectedcountry">
+                        <img class="countryimg" src="/Imgs/france.svg" />
+                        <p>PARIS</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tablerightcolumn">
+                    <div>
+                      <p>€0.00</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tableleftcolumn">
+                    <div>
+                      <p>Bucket visibility</p>
+                      <p class="selectedvisibility">
+                        <i class="fas fa-lock"></i>
+                        Private
+                      </p>
+                    </div>
+                  </td>
+                  <td class="tablerightcolumn">
+                    <div>
+                      <p>€0.00</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tableleftcolumn">
+                    <div>
+                      <p>Storage <i class="gbtext">75 GB free storage</i></p>
+                      <div class="storageinput">
+                        <input
+                          type="number"
+                          name="storage"
+                          min="0"
+                          value="75"
+                        />
+                        <div class="gb">GB</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tablerightcolumn">
+                    <div>
+                      <p>€0.00</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tableleftcolumn">
+                    <div>
+                      <p>
+                        Transfert
+                        <i class="gbtext">75 GB outgoing transfer</i>
+                      </p>
+                      <div class="storageinput">
+                        <input
+                          type="number"
+                          name="storage"
+                          min="0"
+                          value="75"
+                        />
+                        <div class="gb">GB</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tablerightcolumn">
+                    <div>
+                      <p>€0.00</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class="columninvisible"></td>
+                  <td class="tablerightcolumn">
+                    <div>€0.00</div>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <input type="submit" value="Create a bucket" />
+        </form>
+
+        <footer class="flex">
+          <a>Blog <i class="fas fa-external-link-alt"></i></a>
+          <a>Pricing <i class="fas fa-external-link-alt"></i></a>
+          <a>Careers <i class="fas fa-external-link-alt"></i></a>
+          <a>Privacy <i class="fas fa-external-link-alt"></i></a>
+          <a>Cookies <i class="fas fa-external-link-alt"></i></a>
+          <a>API <i class="fas fa-external-link-alt"></i></a>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
